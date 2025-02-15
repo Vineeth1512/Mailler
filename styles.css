@@ -657,6 +657,9 @@ textarea {
 }
 
 @media screen and (max-width: 576px) {
+  html {
+    overflow-x: hidden;
+  }
   .sec-2,
   .sec-5,
   .sec-6-child,
