@@ -672,6 +672,9 @@ textarea {
 }
 
 @media screen and (max-width: 576px) {
+  .fixed-icon {
+    width: 15%;
+  }
   html {
     overflow-x: hidden;
     scroll-behavior: smooth;
