@@ -34,6 +34,19 @@ body {
   background-color: var(--white-color);
 }
 
+.dark-mode {
+  background-color: black !important;
+  color: white !important;
+}
+
+.dark-mode .sec-1,
+.sec-7-b-1,
+.sec-7-b-1:hover,
+.sec-9 {
+  background-color: black !important;
+  color: white !important;
+}
+
 a {
   text-decoration: none !important;
   color: #757575 !important;
@@ -185,7 +198,7 @@ li > a:hover {
   font-size: 3rem;
 
   line-height: 1.2;
-  color: var(--h1-heading);
+  color: var(--h1-heading) !important;
 }
 .sec-para {
   padding: 0 2% 0 0;

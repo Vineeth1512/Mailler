@@ -57,6 +57,10 @@
                 <li><a class="a" href="contact.html">Contact Us</a></li>
                 <li><a href="#" class="bttnn btn-bg-red">Log In</a></li>
                 <li><a href="#" class="bttnn btn-bg btn-bg-white">Sign Up</a></li>
+                <li> <a href="#"> <button class="bttnn" id="darkModeToggle" style="padding: 1px 6px;">
+                            <i id="modeIcon" class="fas fa-moon"></i>
+                        </button> </a>
+                </li>
             </ul>
         </nav>
 
@@ -68,6 +72,10 @@
 
         <nav class="nav-res" data-aos="fade-right" data-aos-duration="1000">
             <ul>
+                <!-- <li> <button class="bttnn" id="darkModeToggle" style="padding: 1px 6px;">
+                        <i id="modeIcon" class="fas fa-moon"></i>
+                    </button>
+                </li> -->
                 <li><a class="active-page" href="home.html">Home</a></li>
                 <li><a class="a" href="about.html">About</a></li>
                 <li><a class="a" href="services.html">Services</a></li>
@@ -740,6 +748,25 @@ Aos Animation  end-->
         function scrollToTop() {
             window.scrollTo({ top: 0, behavior: 'smooth' });
         }
+
+
+
+
+        const toggleButton = document.getElementById("darkModeToggle");
+        const modeIcon = document.getElementById("modeIcon");
+        const body = document.body;
+
+        toggleButton.addEventListener("click", () => {
+            body.classList.toggle("dark-mode");
+
+            // Toggle between moon and sun icons
+            if (body.classList.contains("dark-mode")) {
+                modeIcon.classList.replace("fa-moon", "fa-sun");
+            } else {
+                modeIcon.classList.replace("fa-sun", "fa-moon");
+            }
+        });
+
     </script>
 
 </body>
