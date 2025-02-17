@@ -675,14 +675,14 @@ textarea {
   background-color: black !important;
   color: white !important;
 }
-/* 
+
 .dark-mode .sec-1,
 .sec-7-b-1,
 .sec-7-b-1:hover,
 .sec-9 {
   background-color: black;
   color: white;
-} */
+}
 
 @media screen and (max-width: 576px) {
   .fixed-icon {
