@@ -317,6 +317,33 @@
         AOS.init();
     </script>
 
+
+    <script>
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+
+
+
+        const toggleButton = document.getElementById("darkModeToggle");
+        const modeIcon = document.getElementById("modeIcon");
+        const body = document.body;
+
+        toggleButton.addEventListener("click", () => {
+            body.classList.toggle("dark-mode");
+
+
+            // Toggle between moon and sun icons
+            if (body.classList.contains("dark-mode")) {
+                modeIcon.classList.replace("fa-moon", "fa-sun");
+            } else {
+                modeIcon.classList.replace("fa-sun", "fa-moon");
+            }
+        });
+
+    </script>
+
 </body>
 
 </html>
